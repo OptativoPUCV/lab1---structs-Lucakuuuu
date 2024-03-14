@@ -197,3 +197,17 @@ exercises.c:27:7: error: variable ‘new’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 a425ab5
+Thu 14 Mar 2024 08:58:33 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:33:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   33 |   return new;
+      |          ^~~
+exercises.c:26:6: note: declared here
+   26 | void reverseArray(int arr[], int size) {
+      |      ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+40aa6a2
