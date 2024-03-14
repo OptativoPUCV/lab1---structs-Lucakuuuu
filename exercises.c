@@ -9,8 +9,7 @@
     Descripción: Escribe una función que tome un arreglo de enteros
     y su tamaño, y devuelva el valor más grande del arreglo.
     */
-    int findMax(int arr[], int size) 
-{
+    int findMax(int arr[], int size){
   int max, i;
   for(i = 0; i < size-1; i++)
     {
@@ -18,9 +17,12 @@
       {
         max = arr[i];
       }
+      else
+      {
+        max = arr[i+1];
+      }
     }
-  printf("%i", max);
-  return 0;
+  return max;
 }
 
 /*
