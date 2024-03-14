@@ -1,15 +1,17 @@
-a #include <ctype.h>
+a #include<ctype.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-/*
-Ejercicio 1: Encuentra el Elemento Mayor
-Descripción: Escribe una función que tome un arreglo de enteros
-y su tamaño, y devuelva el valor más grande del arreglo.
-*/
-int findMax(int arr[], int size) { return 0; }
+    /*
+    Ejercicio 1: Encuentra el Elemento Mayor
+    Descripción: Escribe una función que tome un arreglo de enteros
+    y su tamaño, y devuelva el valor más grande del arreglo.
+    */
+    int findMax(int arr[], int size) {
+  return 0;
+}
 
 /*
 Ejercicio 2: Invertir un Arreglo
@@ -23,8 +25,9 @@ Ejercicio 3: Filtrar Números Pares
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
-newsize apunta a una dirección válida que no ha sido inicializada con nigún valor específico. 
-*newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
+newsize apunta a una dirección válida que no ha sido inicializada con nigún
+valor específico. *newsize debe almacenar el tamaño del nuevo arreglo que se
+retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
 
