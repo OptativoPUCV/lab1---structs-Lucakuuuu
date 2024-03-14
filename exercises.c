@@ -22,7 +22,8 @@
         max = arr[i+1];
       }
     }
-  return max;
+  printf("%i", max);
+  return 0;
 }
 
 /*
