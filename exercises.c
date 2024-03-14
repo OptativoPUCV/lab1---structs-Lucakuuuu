@@ -30,7 +30,6 @@ void reverseArray(int arr[], int size) {
       new[j] = arr[i];
       j++;
     }
-  return (new[]);
 }
 
 /*
