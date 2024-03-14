@@ -47,8 +47,8 @@ retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
 { 
-  
-  return 3; 
+  *newSize = 3;
+  return *newSize; 
 }
 
 /*
