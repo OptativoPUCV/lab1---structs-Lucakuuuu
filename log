@@ -286,3 +286,14 @@ exercises.c:27:7: error: variable ‘arr2’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 a0c7018
+Thu 14 Mar 2024 09:05:11 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:27:7: error: variable ‘arr2’ set but not used [-Werror=unused-but-set-variable]
+   27 |   int arr2[size];
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+453b2eb
