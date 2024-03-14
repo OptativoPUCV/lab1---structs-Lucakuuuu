@@ -47,6 +47,7 @@ retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
 { 
+  
   int arr2[size];
 
   int k = 0, i;
@@ -57,6 +58,10 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
         arr2[k] = arr[i];
         k++
       }
+    }
+  for(i = 0; i < k; i++)
+    {
+      arr[i] = arr2[i];
     }
   *newSize = k;
   return newSize; 

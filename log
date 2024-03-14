@@ -416,3 +416,16 @@ exercises.c:50:7: error: variable ‘arr2’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 55fb75f
+Thu 14 Mar 2024 09:20:07 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:59:12: error: expected ‘;’ before ‘}’ token
+   59 |         k++
+      |            ^
+      |            ;
+   60 |       }
+      |       ~     
+Compilation failed
+6970a2d
