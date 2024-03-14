@@ -89,3 +89,15 @@ exercises.c:14:7: error: variable ‘max’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 0a1eaa2
+Thu 14 Mar 2024 08:47:58 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:19:9: error: ‘max’ undeclared (first use in this function); did you mean ‘fmax’?
+   19 |         max = arr[i];
+      |         ^~~
+      |         fmax
+exercises.c:19:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+241471c
