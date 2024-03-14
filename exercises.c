@@ -11,19 +11,10 @@
     */
     int findMax(int arr[], int size) 
 {
-  int aux, i;
+  int max, i;
   for(i = 0; i < size-1; i++)
-    {
-      if(arr[i] < arr[i+1])
-      {
-        aux = arr[i];
-        arr[i] = arr[i+1];
-        arr[i+1] = aux;
-      }
-    }
-  for(i = 0; i < size; i++)
-    printf("%i ", arr[i]);
-  return 0;
+    if(arr[i] > arr[i+1]) max = arr[i];
+  return max;
 }
 
 /*
