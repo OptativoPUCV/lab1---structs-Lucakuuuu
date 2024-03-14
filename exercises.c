@@ -16,7 +16,7 @@
       if(arr[i] > arr[i+1])
         max = arr[i];
       else
-        if(arr[i] < arr[i+1]))
+        if(arr[i] < arr[i+1])
           max = arr[i+1];
     }
   printf("%i", max);
