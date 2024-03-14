@@ -52,25 +52,15 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
 
   int i, k = 0;
   for(i = 0; i < size; i++)
-    {
-      if(arr[i] == 0)
+      if(arr[i] % 2 == 0)
       {
         arr2[k] = arr[i];
         k++;
       }
-      else
-      {
-        if(arr[i] % 2 == 0)
-        {
-          arr2[k] = arr[i];
-          k++;
-        }
-      }
-    }
+
   for(i = 0; i < size; i++)
-    {
       arr[i] = arr2[i];
-    }
+  
   *newSize = k;
   return newSize;
 }
