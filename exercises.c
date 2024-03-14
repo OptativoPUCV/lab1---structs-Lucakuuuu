@@ -11,7 +11,7 @@
     */
     int findMax(int arr[], int size) 
 {
-  printf("%i", arr[size-1]);
+  int max = arr[0];
   return 0;
 }
 

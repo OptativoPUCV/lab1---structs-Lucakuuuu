@@ -32,3 +32,14 @@ Thu 14 Mar 2024 08:39:56 PM UTC:
  tests:  0|7
 total_score: 0/70
 ebf92bc
+Thu 14 Mar 2024 08:40:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:14:7: error: unused variable ‘max’ [-Werror=unused-variable]
+   14 |   int max = arr[0];
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+8dbae6c
