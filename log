@@ -124,3 +124,34 @@ Thu 14 Mar 2024 08:50:34 PM UTC:
  tests:  0|7
 total_score: 0/70
 7ed0c67
+Thu 14 Mar 2024 08:51:49 PM UTC: 
+ exercises.c | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:18:30: error: expected statement before ‘)’ token
+   18 |         if(arr[i] < arr[i+1]))
+      |                              ^
+exercises.c:13:7: error: variable ‘max’ set but not used [-Werror=unused-but-set-variable]
+   13 |   int max, i;
+      |       ^~~
+exercises.c: At top level:
+exercises.c:21:10: error: expected declaration specifiers or ‘...’ before string constant
+   21 |   printf("%i", max);
+      |          ^~~~
+exercises.c:21:16: error: unknown type name ‘max’
+   21 |   printf("%i", max);
+      |                ^~~
+exercises.c:22:3: error: expected identifier or ‘(’ before ‘return’
+   22 |   return 0;
+      |   ^~~~~~
+exercises.c:23:1: error: expected identifier or ‘(’ before ‘}’ token
+   23 | }
+      | ^
+exercises.c: In function ‘findMax’:
+exercises.c:20:5: error: control reaches end of non-void function [-Werror=return-type]
+   20 |     }
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+27480c5
