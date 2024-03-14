@@ -78,3 +78,14 @@ exercises.c:17:10: error: ‘max’ may be used uninitialized in this function [
 cc1: all warnings being treated as errors
 Compilation failed
 7e5d21d
+Thu 14 Mar 2024 08:47:42 PM UTC: 
+ exercises.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:14:7: error: variable ‘max’ set but not used [-Werror=unused-but-set-variable]
+   14 |   int max, i;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+0a1eaa2
