@@ -467,3 +467,18 @@ exercises.c:59:9: error: value computed is not used [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 dd5533b
+Thu 14 Mar 2024 09:23:33 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:58:14: error: ‘k’ undeclared (first use in this function)
+   58 |         arr2[k] = arr[i];
+      |              ^
+exercises.c:58:14: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:59:17: error: statement with no effect [-Werror=unused-value]
+   59 |         *newSize+1;
+      |         ~~~~~~~~^~
+cc1: all warnings being treated as errors
+Compilation failed
+4132cb1
