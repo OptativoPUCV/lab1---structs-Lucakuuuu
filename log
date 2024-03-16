@@ -527,3 +527,17 @@ Thu 14 Mar 2024 09:28:43 PM UTC:
  tests:  0|5
 total_score: 20/70
 00e9e33
+Sat 16 Mar 2024 03:55:24 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:65:14: error: expected expression before ‘]’ token
+   65 |   return arr[];
+      |              ^
+exercises.c:66:1: error: control reaches end of non-void function [-Werror=return-type]
+   66 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+03a059e
