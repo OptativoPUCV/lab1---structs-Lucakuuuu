@@ -47,17 +47,17 @@ retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
 { 
-  
-  int *arr2 = (int *)malloc(sizeof(int));
-
-  int i, k = 0;
+  int i, k = 0, j = 0;
+  for(i = 0; i < size; i++)
+      if(arr[i] % 2 == 0)
+        k++;
+  int arr2[k];
   for(i = 0; i < size; i++)
       if(arr[i] % 2 == 0)
       {
-        arr2[k] = arr[i];
-        k++;
+        arr2[j] = arr[i];
+        j++;
       }
-  
   *newSize = k;
   return arr2;
 }

@@ -567,3 +567,14 @@ Sat 16 Mar 2024 03:57:35 PM UTC:
  tests:  0|4
 total_score: 30/70
 445db1a
+Sat 16 Mar 2024 04:00:49 PM UTC: 
+ exercises.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:62:10: error: function returns address of local variable [-Werror=return-local-addr]
+   62 |   return arr2;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3d6666b
