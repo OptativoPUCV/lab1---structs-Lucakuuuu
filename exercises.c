@@ -47,19 +47,21 @@ retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
 { 
-  int i, k = 0, j = 0;
+  int i, k = 0;
   for(i = 0; i < size; i++)
       if(arr[i] % 2 == 0)
         k++;
+  
   int arr2[k];
-  for(i = 0; i < size; i++)
+  
+  for(i = 0, k = 0; i < size; i++)
       if(arr[i] % 2 == 0)
       {
         arr2[j] = arr[i];
         j++;
       }
-  *newSize = k;
   
+  *newSize = k;
   return newSize;
 }
 
