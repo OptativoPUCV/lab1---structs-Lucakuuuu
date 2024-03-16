@@ -615,3 +615,17 @@ exercises.c:55:7: error: variable ‘arr2’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 a29193d
+Sat 16 Mar 2024 04:06:59 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:65:10: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   65 |   return *newSize;
+      |          ^~~~~~~~
+exercises.c:55:7: error: variable ‘arr2’ set but not used [-Werror=unused-but-set-variable]
+   55 |   int arr2[k];
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+73ed87a
