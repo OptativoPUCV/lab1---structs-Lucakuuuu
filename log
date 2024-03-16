@@ -662,3 +662,9 @@ exercises.c:56:7: error: variable ‘arr2’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 31ed4c9
+Sat 16 Mar 2024 04:09:59 PM UTC: 
+ exercises.c | 18 +++++-------------
+ 1 file changed, 5 insertions(+), 13 deletions(-)
+ tests:  0|4
+total_score: 30/70
+071676c
