@@ -101,24 +101,31 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) 
 {
-  int retornador = 0;
-  if(arr[0] <= arr[1])
+  int isAscending = 1;
+  int isDescending = 1;
+  for (int i = 0; i < size - 1; i++) 
+  {
+    if (arr[i] > arr[i + 1]) 
     {
-      for(int i = 0; i < size - 1; i++)
-        if(arr[i] > arr[i + 1]) 
-          return 0;
-        else 
-          retornador = 1;
-    }
-  else
+      isAscending = 0;
+    } 
+    else if (arr[i] < arr[i + 1]) 
     {
-      for(int i = 0; i < size - 1; i++)
-        if(arr[i] < arr[i + 1]) 
-          return 0;
-        else 
-          retornador = -1;
+      isDescending = 0;
     }
-  return retornador;
+  }
+  if (isAscending) 
+  {
+    return 1;
+  } 
+  else if (isDescending) 
+  {
+    return -1;
+  } 
+  else 
+  {
+    return 0;
+  }
 }
 
 /*
