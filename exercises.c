@@ -103,22 +103,21 @@ int checkSorted(int arr[], int size)
 {
   int retornador = 0;
   if(arr[0] >= arr[1])
-  {
-    for(int i = 0; i < size - 1; i++)
-      if(arr[i] < arr[i + 1]) 
-        return 0;
-      else 
-        retornador = -1;
-  }
+    {
+      for(int i = 0; i < size - 1; i++)
+        if(arr[i] > arr[i + 1]) 
+          return 0;
+        else 
+          retornador = 1;
+    }
   else
-  {
-    for(int i = 0; i < size - 1; i++)
-      if(arr[i] > arr[i + 1]) 
-        return 0;
-      else 
-        retornador = 1;
-  }
-
+    {
+      for(int i = 0; i < size - 1; i++)
+        if(arr[i] < arr[i + 1]) 
+          return 0;
+        else 
+          retornador = -1;
+    }
   return retornador;
 }
 
