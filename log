@@ -651,3 +651,14 @@ exercises.c:55:7: error: variable ‘arr2’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 5429088
+Sat 16 Mar 2024 04:09:02 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:56:7: error: variable ‘arr2’ set but not used [-Werror=unused-but-set-variable]
+   56 |   int arr2[k];
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+31ed4c9
